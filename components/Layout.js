@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Header from './Header'
+
 
 const Layout = ({children, pagina}) => {
   return (
@@ -9,6 +11,8 @@ const Layout = ({children, pagina}) => {
         </title>
         <meta name="description" content='Sitio Web de ventas de guitarras'/>
       </Head>
+      <Header />
+
 
       {children}
     </div>
